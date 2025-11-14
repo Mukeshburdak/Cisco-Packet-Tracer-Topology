@@ -1,4 +1,4 @@
-Task No. 6: To configuring a DHCP Server & test the network configuration.
+Task No. 3: To configuring a DHCP Server & test the network configuration.
 
 (a) Objective :-
 
