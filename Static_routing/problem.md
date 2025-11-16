@@ -1,4 +1,4 @@
-Task No. 5: To implementation & test the static routing using GUI and CLI mode.
+Task No. 4: To implementation & test the static routing using GUI and CLI mode.
 
 (a) Objective :-
 
