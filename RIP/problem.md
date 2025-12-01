@@ -1,8 +1,8 @@
-Task: To implementation & study of dynamic routing in computer networks GUI and CLI mode.
-
-
+To implementation & study of dynamic routing in computer networks GUI and CLI mode.
+-
+---
 ✅ Objective
-
+-
 • To understand the concept of dynamic routing in computer networks.
 
 • To configure and implement dynamic routing protocols (RIP, OSPF, or EIGRP) using GUI (Cisco Packet Tracer) and CLI (Router command line).
@@ -13,9 +13,9 @@ Task: To implementation & study of dynamic routing in computer networks GUI and 
 
 • To verify connectivity between different networks using ping, tracert, and routing table commands.
 
-
+---
 ✅ Configuration of Different Components of Network Topology
-
+-
 Below is the neatly formatted table used for Packet Tracer or CLI implementation.
 
 1. End Devices (PCs, Laptops)
@@ -120,15 +120,19 @@ end
 | `ping <IP>`             | Tests connectivity     |
 | `tracert <IP>`          | Shows path of packets  |
 
+---
 ✅ Network topology
-
+-
 <img width="615" height="417" alt="image" src="https://github.com/user-attachments/assets/a7679ff5-d729-4773-a327-1a7b4b2e9694" />
 
-
+---
 ✅Testing of network communication
-
+-
 <img width="556" height="560" alt="image" src="https://github.com/user-attachments/assets/c1a22fc2-22cc-4af2-bd45-7454ae44fbe7" />
 
+---
+✅Router0 image
+-
 <img width="846" height="386" alt="image" src="https://github.com/user-attachments/assets/858e35be-1d31-4eac-89fa-8d8fa20ff395" />
 
-Router0 image
+---
