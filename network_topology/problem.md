@@ -1,14 +1,18 @@
 🏫 Campus Network Topology – Packet Tracer Project
-
+-
 This repository contains a complete Campus Network Topology designed and simulated in Cisco Packet Tracer.
 The project demonstrates hierarchical networking, inter-VLAN routing, dynamic routing between routers, DHCP, DNS & HTTP services, and departmental segmentation.
 
+---
 📁 Files Included
+-
 File	Description
 campus_topology.pkt	The full Cisco Packet Tracer simulation file containing the campus network.
 README.md	Documentation explaining the topology, addressing, configurations, and components.
-🖼 Topology Overview
 
+---
+🖼 Topology Overview
+-
 The network consists of multiple departments, core routing, dynamic routing between campus routers, and server infrastructure.
 It includes:
 
@@ -28,7 +32,9 @@ Core Router (Campus Router)
 
 Distribution & Access Layer Switches
 
+---
 🌐 IP Addressing Scheme
+-
 1. Server Network (192.168.10.0/24)
 
 | Service     | IP Address            |
@@ -57,7 +63,9 @@ Each LAN contains a PC and a Laptop with static/DHCP-assigned IP addresses.
 | Remote LAN 2      | `192.168.30.0/24`                                       |
 | Router Interlinks | `192.168.40.0/30`, `192.168.50.0/30`, `192.168.60.0/30` |
 
+---
 🛠 Features Implemented
+-
 ✔ 1. DHCP Server
 
 Automatically assigns IPs to:
@@ -92,7 +100,9 @@ Distribution Layer: Department switches
 
 Access Layer: PCs, Laptops
 
+---
 📡 Router Interconnections
+-
 
 | Link                    | Network           |
 | ----------------------- | ----------------- |
@@ -100,8 +110,9 @@ Access Layer: PCs, Laptops
 | Router1 ↔ Router2       | `192.168.50.0/30` |
 | Campus Router ↔ Router2 | `192.168.60.0/30` |
 
+---
 🚀 How to Use This Project
-
+-
 Download and install Cisco Packet Tracer 8.x or later
 
 Open the .pkt file in Packet Tracer
@@ -124,8 +135,9 @@ nslookup
 
 Web browsing via HTTP
 
+---
 📘 Learning Outcomes
-
+-
 By using this topology, students will understand:
 
 IP addressing & subnetting
@@ -139,3 +151,5 @@ Hierarchical network architecture
 Dynamic routing protocol configuration
 
 Multi-department network segmentation
+
+---
