@@ -1,14 +1,16 @@
 🌐 Inter-VLAN & Router-on-a-Stick Network Topology
-
+-
 This project demonstrates a Router-on-a-Stick Inter-VLAN Routing setup using a Cisco 2911 Router and two 2960 switches.
 Two VLAN networks (10.x.x.x and 20.x.x.x) are configured on different switches and routed using subinterfaces.
 
 ---
 📘 Network Topology
+-
 <img width="1098" height="640" alt="Screenshot 2025-11-30 085454" src="https://github.com/user-attachments/assets/5142ef57-cfe5-4fa0-8e14-836a62ea8ad8" />
 
 ---
 🖥 Devices Used
+-
 | Device Type | Model      | Quantity |
 | ----------- | ---------- | -------- |
 | Router      | Cisco 2911 | 1        |
@@ -18,6 +20,7 @@ Two VLAN networks (10.x.x.x and 20.x.x.x) are configured on different switches a
 
 ---
 📡 VLAN Details
+-
 | VLAN Name  | Purpose                                   | Subnet          | Gateway      |
 | ---------- | ----------------------------------------- | --------------- | ------------ |
 | **VLAN-M** | Main / Marketing / Management (as needed) | 192.168.10.0/24 | 192.168.10.1 |
@@ -25,6 +28,7 @@ Two VLAN networks (10.x.x.x and 20.x.x.x) are configured on different switches a
 
 ---
 🧩 IP Addressing Table
+-
 VLAN-M (192.168.10.0/24)
 | Device | IP Address   |
 | ------ | ------------ |
@@ -33,7 +37,6 @@ VLAN-M (192.168.10.0/24)
 | PC-PT  | 192.168.10.4 |
 | PC-PT  | 192.168.10.5 |
 
----
 VLAN-B (192.168.20.0/24)
 | Device    | IP Address   |
 | --------- | ------------ |
@@ -44,9 +47,9 @@ VLAN-B (192.168.20.0/24)
 
 ---
 🔧 Configuration Steps
-
+-
 1️⃣ Create VLAN-M and VLAN-B on both switches
-
+-
 vlan 10
 
  name VLAN-M
@@ -56,7 +59,7 @@ vlan 20
  name VLAN-B
 
 2️⃣ Assign Access Ports
-
+-
 Switch0
 
 interface range fa0/1-3
@@ -85,9 +88,8 @@ interface range fa0/4-6
  
  switchport access vlan 20   # VLAN-B
  
- ---
  3️⃣ Configure Trunk Between Both Switches
- 
+ -
 interface fa0/24
 
  switchport mode trunk
@@ -95,9 +97,8 @@ interface fa0/24
 
 (Repeat on both switches.)
 
----
 4️⃣ Router-on-a-Stick Configuration (Inter-VLAN Routing)
-
+-
 interface g0/0.10
 
  encapsulation dot1Q 10
@@ -116,7 +117,7 @@ interface g0/0
  
  ---
  🔍 Verification Commands
- 
+ -
 On Switch
 
 show vlan brief
@@ -139,7 +140,7 @@ ping <other VLAN devices>
 
 ---
 ✅ Expected Results
-
+-
 ✔ VLAN-M devices communicate across switches
 
 ✔ VLAN-B devices communicate across switches
@@ -147,3 +148,5 @@ ping <other VLAN devices>
 ✔ Router enables VLAN-M ↔ VLAN-B communication
 
 ✔ Trunk carries both VLANs properly
+
+---
