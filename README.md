@@ -1,16 +1,17 @@
 🎛️ Cisco Packet Tracer Topology Repository
+-
 
 <p align="center"> <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1500&color=2F81F7&center=true&vCenter=true&width=800&lines=Cisco+Packet+Tracer+Topology+Repository;Networking+Projects+for+Students+%26+Professionals;Configure+.+Simulate+.+Learn" /> </p> <p align="center"> <img src="https://github.com/Mukeshburdak.png" width="130" style="border-radius:50%" /> </p> <p align="center"> <a href="https://github.com/Mukeshburdak"> <img src="https://img.shields.io/badge/Made%20By-Mukesh%20Burdak-blue?style=for-the-badge" /> </a> <img src="https://img.shields.io/github/repo-size/Mukeshburdak/Cisco-Packet-Tracer-Topology?style=for-the-badge&color=orange" /> <img src="https://img.shields.io/github/last-commit/Mukeshburdak/Cisco-Packet-Tracer-Topology?style=for-the-badge&color=brightgreen" /> </p>
 
 ---
 🚀 Overview
-
+-
 Welcome to the Cisco Packet Tracer Topology Repository, a curated collection of practical, real-world, and exam-oriented networking topologies.
 Each file helps you understand and implement essential networking technologies using Cisco Packet Tracer.
 
 ---
 🌐 Repository Features
-
+-
 ✔ Multiple .pkt files with real-world examples
 
 ✔ Well-documented configuration steps
@@ -23,7 +24,7 @@ Each file helps you understand and implement essential networking technologies u
 
 ---
 🧠 Topics Covered
-
+-
 This repository includes topologies on:
 
 🔹 VLAN Configuration (VLAN A, VLAN B, VLAN M, etc.)
@@ -44,14 +45,14 @@ This repository includes topologies on:
 
 ---
 🖥 Requirements
-
+-
 Cisco Packet Tracer 8.0 or later
 
 Basic understanding of networking concepts (IP addressing, routers, switches, VLANs, etc.)
 
 ---
 📥 How to Use
-
+-
 Clone the Repository
 
 git clone https://github.com/Mukeshburdak/Cisco-Packet-Tracer-Topology.git
@@ -63,7 +64,7 @@ Follow the Objectives, Network Diagram, and CLI Configurations provided within e
 
 ---
 🎯 Learning Outcomes
-
+-
 By exploring these projects, you will learn how to:
 
 Configure Routers, Switches, Servers, & End Devices
@@ -78,9 +79,9 @@ Understand real-world networking logic
 
 ---
 📁 Folder Structure (Sample)
-
+-
 📦 Cisco-Packet-Tracer-Topology
-
+-
  ┣ 📂 VLAN-Topology
  
  ┣ 📂 InterVLAN-Routing
@@ -99,7 +100,7 @@ Understand real-world networking logic
 
 ---
 🤝 Contributing
-
+-
 Contributions are always welcome!
 
 Fork the repo
@@ -112,14 +113,16 @@ Submit a pull request
 
 ---
 📝 License
-
+-
 📄 This repository is licensed under the MIT License — free to use, modify, and share.
 
 ---
 👨‍💻 Author
-
+-
 Mukesh Burdak
 B.Tech CSE @ Central University of Jammu
 Data Science | Machine Learning | Networking Enthusiast
 
 <p align="center"> <a href="https://github.com/Mukeshburdak"> <img src="https://img.shields.io/badge/Visit%20Profile-2F81F7?style=for-the-badge&logo=github&logoColor=white" /> </a> </p>
+
+---
