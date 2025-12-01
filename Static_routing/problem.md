@@ -1,7 +1,8 @@
-Task No. 4: To implementation & test the static routing using GUI and CLI mode.
-
+To implementation & test the static routing using GUI and CLI mode.
+-
+---
 (a) Objective :-
-
+-
 The objective of this experiment is to implement and verify static routing between multiple networks 
 using both the Graphical User Interface (GUI) and Command Line Interface (CLI) modes in Cisco 
 Packet Tracer. 
@@ -19,12 +20,14 @@ Verify network connectivity using ping and traceroute commands.
 
 Understand the difference between GUI-based and CLI-based configuration methods for routing. 
 
+---
 (b) Network Topology :-
-
+-
 <img width="1033" height="490" alt="image" src="https://github.com/user-attachments/assets/0f0cda6a-7e82-4557-b45f-eeb594195e1e" />
 
+---
 (c) Componentand devices used and its configuration :-
-
+-
 1) IP addressing table
 
 | Device Label (on diagram)      | Device Type | IP Address                                  |   Subnet Mask | Default Gateway |
@@ -41,39 +44,48 @@ Understand the difference between GUI-based and CLI-based configuration methods 
 | Switch (Left) mgmt (optional)  |      Switch | 192.168.10.254                              | 255.255.255.0 | 192.168.10.1    |
 | Switch (Right) mgmt (optional) |      Switch | 192.168.20.254                              | 255.255.255.0 | 192.168.20.1    |
 
-3) Router routing table
-
-   This is small — the router has two directly connected networks, so the routing table will show connected routes:
+ 
+2) This is small — the router has two directly connected networks, so the routing table will show connected routes:
    Router# show ip route
+   
 Codes: C - connected, S - static, R - RIP, ...
+
 C    192.168.10.0/24 is directly connected, GigabitEthernet0/0
+
 C    192.168.20.0/24 is directly connected, GigabitEthernet0/1
-      (other networks would appear here if added)
 
-4) Sample configuration commands
+3) Sample configuration commands
 
-Below are minimal, copy-paste friendly configs for the router and both switches (Cisco IOS style). Adjust interface names if your Packet Tracer device ports differ.
+Below are minimal, copy-paste friendly configs for the router and both switches (Cisco IOS style).Adjust interface names if your Packet Tracer device ports differ.
 
 enable
+
 configure terminal
+
 hostname Router4
 
 ! Left LAN on Gi0/0
+
 interface GigabitEthernet0/0
+
  description To-Left-Switch
+ 
  ip address 192.168.10.1 255.255.255.0
+ 
  no shutdown
 
 ! Right LAN on Gi0/1
-interface GigabitEthernet0/1
- description To-Right-Switch
- ip address 192.168.20.1 255.255.255.0
- no shutdown
 
-! Optional: simple security and name
-ip route 0.0.0.0 0.0.0.0 <ISP-next-hop>   
+interface GigabitEthernet0/1
+
+ description To-Right-Switch
+ 
+ ip address 192.168.20.1 255.255.255.0
+ 
+ no shutdown  
 
 write memory
+
 4) Packet flow (step-by-step example)
 
 Example: PC-left (192.168.10.2) pings Laptop-right (192.168.20.3).
@@ -95,6 +107,7 @@ Right switch forwards to host: Right switch receives and forwards the frame out 
 Destination receives packet: Laptop-right receives, replies using the same procedure (dest is outside -> set gateway 192.168.20.1), router forwards back.
 
 5) Useful verification / troubleshooting commands
+
 On Router:
 
 show ip interface brief — confirm interfaces and IPs
@@ -123,8 +136,12 @@ Use ipconfig / ping / check default gateway and subnet mask.
 
 If ping fails, check ARP table (on PC) and MAC table (on switch).
 
+---
 (d) ping command :-
-
+-
 <img width="513" height="248" alt="Screenshot 2025-11-15 205058" src="https://github.com/user-attachments/assets/ebea4d24-71ff-48a6-bce0-51dc40c8bbe0" />
+
+---
 <img width="752" height="494" alt="Screenshot 2025-11-15 204647" src="https://github.com/user-attachments/assets/7e0d5199-2733-4355-a7a3-0c0ae5b31dcc" />
 
+---
